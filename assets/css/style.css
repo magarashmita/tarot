@@ -1293,10 +1293,17 @@ section.as_team .row {
     font-family: 'Philosopher', sans-serif;
     color: #000;
 }
+.as_team_box .reader-details p{
+    margin: 5px;
+    padding-bottom: 15px;
+    padding-top: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
 .as_team_box img {
     object-fit: cover;
     width: 200px;
-    height: 300px;
+    height: 250px;
     transition: transform 0.3s ease-in-out;
     transform-origin: center bottom;
 }
@@ -1306,7 +1313,7 @@ section.as_team .row {
 }
 .as_team_heading{
     font-size: 30px;
-    padding-bottom: 10px;
+    /* margin-bottom: 0; */
 }
 .as_team_gradient_text{
     color: #3d246c;
@@ -1327,9 +1334,9 @@ justify-content: center;
 align-items: center;    
 }
 .as_team_box li{
-    margin: 0 10px 0 10px;
+    margin: 0 8px 0 8px;
     background-color:#049b52;
-    border-radius: 20%;
+    border-radius:50%;
     display: inline;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
@@ -2299,7 +2306,7 @@ section.as_team .row {
 
 /* service detail start */
 .as_about_page .as_service_wrapper{
-    background-image: url(../images/bg9.jpg);
+    /* background-image: url(../images/bg9.jpg); */
 }
 .as_servicedetail_wrapper{
     background-color: #07273c;
@@ -2459,6 +2466,84 @@ section.as_team .row {
     }
 }
 
+
+/* why us */
+.as_speaktoexpert_wrapper{
+    background-image: url('../images/contact-expert-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    padding: 150px 0 100px;
+    position: relative;
+    z-index: 1;
+}
+.ast_speaktoexpert{
+	float:left;
+	width:100%;
+}
+.ast_speaktoexpert_box{
+	float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-bottom:30px;
+}
+.ast_speaktoexpert_box span{
+    float: left;
+    width: 120px;
+    height: 120px;
+    line-height: 95px;
+    border-radius: 100%;
+    background-color: #049b52;
+    text-align: center;
+    border: 10px solid #FFFFFF;    
+    -webkit-box-shadow: -1px 0px 1px 0px #e1e1e1;
+    -moz-box-shadow: -1px 0px 1px 0px #e1e1e1;
+    -o-box-shadow: -1px 0px 1px 0px #e1e1e1;
+    -ms-box-shadow: -1px 0px 1px 0px #e1e1e1;
+    box-shadow: -1px 0px 1px 0px #e1e1e1;
+}
+.ast_speaktoexpert_box span img{
+	display:inline-block;
+    width: 60px;
+}
+.ast_speaktoexpert_box_info{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    right: 0;
+    height: 80px;
+    background-color: #ffffff;
+    margin-bottom: 0px;
+    border-radius: 3px;
+    z-index: -1;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-left: 75px;
+    -webkit-box-shadow: 0px 0px 1px 0px #e1e1e1;
+    -moz-box-shadow: 0px 0px 1px 0px #e1e1e1;
+    -o-box-shadow: 0px 0px 1px 0px #e1e1e1;
+    -ms-box-shadow: 0px 0px 1px 0px #e1e1e1;
+    box-shadow: 0px 0px 1px 0px #e1e1e1;
+}
+.ast_speaktoexpert_box_info p{
+    float: left;
+    width: 100%;
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: #333333;
+}
+@media (max-width: 479px){
+    .ast_speaktoexpert_box_info {
+        padding-top: 15px;
+        padding-right: 0px;
+    }
+    .ast_speaktoexpert_box_info p {
+        font-size: 15px;
+    }
+}
+
+
 /*-------- Tarot css start ---------*/
 .ast_tarot_wrapper{
 	float:left;
@@ -2604,6 +2689,53 @@ section.as_team .row {
 		margin:0 auto;
 	}
 }
+
+/* faqs css start */
+.card {
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+    border: none;
+}
+.nav-tabs-custom .nav-item .nav-link.active {
+    color: #3d246c;
+}
+.nav-tabs-custom .nav-item .nav-link {
+    border: none;
+    color: #049b52;
+}
+.card a{
+    color: #049b52;
+}
+.card a:hover{
+    color: #3d246c;
+}
+.text-heading{
+    color: #049b52;
+}
+.nav-tabs-custom .nav-item {
+    position: relative;
+    color: #271050;
+}
+.nav-tabs-custom .nav-item .nav-link.active:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.nav-tabs-custom .nav-item .nav-link::after {
+    content: "";
+    background: #3d246c;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    -webkit-transition: all 250ms ease 0s;
+    transition: all 250ms ease 0s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+/* faqs css start */
+
+
 
 /* zodiac detail start */
 .as_card_box img {
@@ -3144,6 +3276,14 @@ li.as_info_box p {
 }
 /* Login popup End */
 /* Appointment Page Start */
+.as_appointment_form .form-select{
+    border: 1px solid #e7e7e7;
+    border-radius: 45px;height: 45px;padding: 0 28px;
+}
+.form-select:focus {
+    border-color: var(--secondary-color) !important;
+    box-shadow: none;
+}
 .as_appointment_form .form-control{
     border: 1px solid #e7e7e7;
     border-radius: 45px;

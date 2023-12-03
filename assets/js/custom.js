@@ -350,6 +350,26 @@ $(document).ready(function(){
     }
     });
 
+    $('.as_teamprofile_slider .owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:false,
+      dots:true,
+      autoplay:true,
+    slideBy:1,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:4
+          }
+      }
+      });
+
   // Show Hide section
 	loadmore(8);
 	function loadmore(target){
