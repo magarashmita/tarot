@@ -13,8 +13,8 @@ $(document).ready(function(){
         speed:800,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow:'<button type="button" class="slick-prev as_btn"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="15" viewBox="0 0 8 15"> <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAPCAMAAADu1H4BAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAaVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAD8pYtkAAAAIXRSTlMA1ea/6671JJ/9LZA7gUx28linaftidVeLPJczoSy1+sniUnu2AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAE1JREFUCNcly0USwDAMBEE77DA4jPP/T6Zk6dJzWBkTzkZqTBJMyXKxwJViBbXYQCt29EMYwqifE37WWmDV2mDXOnCn1oW/tR5eDfPZHwl7BIGPaP/tAAAAAElFTkSuQmCC" width="8" height="15"/> </svg></span></button>',
-        nextArrow:'<button type="button" class="slick-next as_btn"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="8" height="15" viewBox="0 0 8 15"> <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAPCAMAAADu1H4BAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADvEKCAAAAAKHRSTlMAwukcx+QNCdLUAwjfyRbuuyX4qzDhmWw27Iwt/p73uREP2svRBLXYnrw30wAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAABVSURBVAjXJctVEsAwCEXRpC6pu6epvf2vsBPg554ZQEjHFTQe/IAQRogTUqqQ8TIvULKqGg2r7dCzBoA6TphtlxUbfe04bLWCtD0NLjq8YR7C+2nqDzu8BZoG2fHJAAAAAElFTkSuQmCC" width="8" height="15"/> </svg></span></button>'
+        prevArrow:'<button type="button" class="slick-prev as_btn"><span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8 .4 34.3z"/></svg></button>',
+        nextArrow:'<button type="button" class="slick-next as_btn"><span><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg></span></button>'
     });
 
     // product slider
@@ -78,6 +78,27 @@ $(document).ready(function(){
         }
     }
     });
+
+    
+	// Gemstone Slider js
+	$('.as_featurecart_slider .owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+	slideBy:1,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+    });
+
 
     // overview slider
     $('.as_overview_slider').slick({
@@ -171,6 +192,8 @@ $(document).ready(function(){
           }
         ]
     });
+    
+
     
     // datepicker
     $('.as_datepicker').datepicker({
@@ -293,7 +316,7 @@ $(document).ready(function(){
     loop:true,
     margin:10,
     nav:false,
-    dots:true,
+    dots:false,
     autoplay:true,
 	slideBy:1,
     responsive:{
@@ -334,7 +357,7 @@ $(document).ready(function(){
     loop:true,
     margin:10,
     nav:false,
-    dots:true,
+    dots:false,
     autoplay:true,
 	slideBy:1,
     responsive:{
@@ -365,10 +388,83 @@ $(document).ready(function(){
               items:2
           },
           1000:{
-              items:4
+              items:3
           }
       }
       });
+
+      $('.as_expert_slider .owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots:false,
+        autoplay:true,
+      slideBy:1,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            },
+            1200:{
+              items:4
+          }
+        }
+        });
+
+        $('.as_blog_slider .owl-carousel').owlCarousel({
+          loop:true,
+          margin:40,
+          nav:false,
+          dots:false,
+          autoplay:false,
+        slideBy:1,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:2
+              },
+              1000:{
+                  items:2
+              }
+          }
+          });
+    
+          $(document).ready(function() {
+            $('.hs_blog_box1_img_wrapper .owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                responsiveClass: true,
+                smartSpeed: 1200,
+                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 1,
+                        nav: true
+                    },
+                    1000: {
+                        items: 1,
+                        nav: true,
+                        loop: true,
+                        margin: 20
+                    }
+                }
+            })
+        })
+
+
+
 
   // Show Hide section
 	loadmore(8);
